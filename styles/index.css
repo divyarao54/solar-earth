@@ -9,6 +9,11 @@ body{
     overflow: visible;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .cursor {
     position: absolute;
     background: #a6daff;
@@ -138,11 +143,13 @@ body{
 .hero-navbar-container{
     position: relative;
     height: max-content;
-    height: 100vh;;
+    height: 100vh;
 }
 
 .navbar{
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 98%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -518,6 +525,23 @@ body{
     font-family: 'Sen', sans-serif;
     line-height: 1.5;
 }
+
+.resize-message {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0);
+    color: white;
+    font-size: 18px;
+    z-index: 9999;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
 
 @media screen and (max-width: 1200px){
     .about-text{
